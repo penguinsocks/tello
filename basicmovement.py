@@ -2,7 +2,7 @@ from djitellopy import tello
 from time import sleep
 
 me = tello.Tello()
-
+print(me.get_battery())
 me.takeoff()
 me.move_up(140)
 sleep(.5)
